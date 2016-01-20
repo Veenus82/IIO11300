@@ -5,20 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava1"
         mc:Ignorable="d"
-        Title="Oy K-S Windows Ab" Height="350" Width="700" FontSize="18">
+        Title="Oy K-S Windows Ab" Height="350" Width="961.592" FontSize="18">
     <Grid>
-    <StackPanel Orientation="Horizontal">
-      <StackPanel Orientation="Vertical">
-        <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
-        <TextBox x:Name="txtWidht" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
-      </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="943*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="10,0,-10,0" Grid.ColumnSpan="2">
             <StackPanel Orientation="Vertical">
-                <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="2" Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Stroke="Black" />
+                <TextBlock x:Name="tbWidth" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtWidth" Text="1200" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtHeight" Text="900" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbFrame" Text="Karmin leveys" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtBorder" Text="45" Height="28" Width="114" Margin="10,10,10,0" />
             </StackPanel>
-            <StackPanel Orientation="Vertical">
-        <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
-        <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
-      </StackPanel>
-    </StackPanel>
-  </Grid>
+            <StackPanel Orientation="Vertical" Background="White" RenderTransformOrigin="0.5,0.5">
+                <Rectangle x:Name="myRectangle" Fill="#FFC0EBFF" StrokeThickness="5" Width="400" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Stroke="#FF723030" Cursor="None" StrokeDashArray="{x:Null}" />
+                <Separator  Height="10" Margin="0" Width="200" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.9,0" BorderThickness="0" Background="Black" IsManipulationEnabled="True">
+                    <Separator.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="-110" Y="-30"/>
+                        </TransformGroup>
+                    </Separator.RenderTransform>
+                </Separator>
+                <Separator  Height="10" Margin="0" Width="400" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.9,0" BorderThickness="0" Background="Black">
+                    <Separator.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-10" Y="-51"/>
+                        </TransformGroup>
+                    </Separator.RenderTransform>
+                </Separator>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="313">
+                <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
+                <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
+                <Label x:Name="lbArea" Content="Ikkunan Ala:" RenderTransformOrigin="0.542,1.437" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5" Margin="0,10,0,-39"  />
+                <TextBlock x:Name="tbAreaResult" TextWrapping="Wrap" Text="" Background="#FF99CAEC" Width="116" Margin="69,10,10,0" TextAlignment="Center"/>
+                <Label x:Name="lbPerimeter" Content="Karmin piiri:" RenderTransformOrigin="0.542,1.437" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5" Margin="0,10,0,-39"  />
+                <TextBlock x:Name="tbPerimResult" TextWrapping="Wrap" Text="" Background="#FF99CAEC" Width="116" Margin="69,10,10,0" TextAlignment="Center" />
+                <Label x:Name="lbFrameArea" Content="Karmin ala:" RenderTransformOrigin="0.542,1.437" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5" Margin="0,10,0,-39"  />
+                <TextBlock x:Name="tbFrameResult" TextWrapping="Wrap" Text="" Width="116" Margin="69,10,10,0" Background="#FF99CAEC" TextAlignment="Center" />
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>
