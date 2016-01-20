@@ -30,31 +30,20 @@ namespace Tehtava1
     {
       InitializeComponent();
     }
-        private void txtWidth_Update(object sender, RoutedEventArgs e)
-        {
-            myRectangle.Width = double.Parse(txtWidth.Text);
-        }
-        private void txtHeight_Update(object sender, RoutedEventArgs e)
-        {
-            myRectangle.Height = double.Parse(txtHeight.Text);
-        }
 
-        private void txtBorder_Update(object sender, RoutedEventArgs e)
-        {
-            myRectangle.StrokeThickness = (double.Parse(txtBorder.Text) / 2);
-        }
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
+            double RecWidth = double.Parse(txtWidth.Text);
+            double RecHeight = double.Parse(txtHeight.Text);
+            double RecStroke = double.Parse(txtBorder.Text);
+            double PerimResult;
+            double AreaResult;
+            double FrameResult;
             //TODO
             try
             {
-                double RecWidth = double.Parse(txtWidth.Text);
-                double RecHeight = double.Parse(txtHeight.Text);
-                double RecStroke = double.Parse(txtBorder.Text);
-                double PerimResult;
-                double AreaResult;
-                double FrameResult;
+                
                 PerimResult = BusinessLogicWindow.CalculatePerimeter(RecWidth, RecHeight);
                 string PerimResultText = Convert.ToString(PerimResult);
                 tbPerimResult.Text = PerimResultText;
