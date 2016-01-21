@@ -1,9 +1,9 @@
-﻿<Window x:Class="Tehtava1.MainWindow"
+﻿<Window x:Class="JAMK.IT.IIO11300.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Tehtava1"
+        xmlns:local="clr-namespace:JAMK.IT.IIO11300"
         mc:Ignorable="d"
         Title="Oy K-S Windows Ab" Height="350" Width="961.592" FontSize="18">
     <Grid>
@@ -45,6 +45,7 @@
             </StackPanel>
             <StackPanel Orientation="Vertical" Width="313">
                 <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
+                <Button x:Name="btnCalculateOO" Content="Laske (OO)" Height="32" Width="180"  Margin="10,10,10,0" Click="btnCalculateOO_Click"/>
                 <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
                 <Label x:Name="lbArea" Content="Ikkunan Ala:" RenderTransformOrigin="0.542,1.437" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5" Margin="0,10,0,-39"  />
                 <TextBlock x:Name="tbAreaResult" TextWrapping="Wrap" Text="" Background="#FF99CAEC" Width="116" Margin="69,10,10,0" TextAlignment="Center"/>
