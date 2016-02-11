@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "Tehtava1\Tehtav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H1MediaPlayer", "H1MediaPlayer\H1MediaPlayer.csproj", "{63443018-3989-43E5-A102-635BC50E8B5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4TyontekijatKonsoli", "H4TyontekijatKonsoli\H4TyontekijatKonsoli.csproj", "{D588C39B-8E48-40B6-8A7C-093DC9E30F5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4TyotekijatWPF", "H4TyotekijatWPF\H4TyotekijatWPF.csproj", "{5ACDE09D-B07B-4319-9A5D-2C7ABC74BC50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{63443018-3989-43E5-A102-635BC50E8B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63443018-3989-43E5-A102-635BC50E8B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63443018-3989-43E5-A102-635BC50E8B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D588C39B-8E48-40B6-8A7C-093DC9E30F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D588C39B-8E48-40B6-8A7C-093DC9E30F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D588C39B-8E48-40B6-8A7C-093DC9E30F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D588C39B-8E48-40B6-8A7C-093DC9E30F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACDE09D-B07B-4319-9A5D-2C7ABC74BC50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACDE09D-B07B-4319-9A5D-2C7ABC74BC50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACDE09D-B07B-4319-9A5D-2C7ABC74BC50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACDE09D-B07B-4319-9A5D-2C7ABC74BC50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
